@@ -1,0 +1,756 @@
+[
+    {
+        "arguments": {
+            "x-queue-type": "quorum"
+        },
+        "auto_delete": false,
+        "consumer_capacity": 0,
+        "consumer_utilisation": 0,
+        "consumers": 0,
+        "durable": true,
+        "effective_policy_definition": {
+            "max-length-bytes": 1000,
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "garbage_collection": {
+            "fullsweep_after": 65535,
+            "max_heap_size": 0,
+            "min_bin_vheap_size": 46422,
+            "min_heap_size": 233,
+            "minor_gcs": 53
+        },
+        "leader": "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "members": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "memory": 176716,
+        "message_bytes": 72,
+        "message_bytes_dlx": 0,
+        "message_bytes_persistent": 72,
+        "message_bytes_ram": 0,
+        "message_bytes_ready": 72,
+        "message_bytes_unacknowledged": 0,
+        "messages": 1,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_dlx": 0,
+        "messages_persistent": 1,
+        "messages_ram": 0,
+        "messages_ready": 1,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "name": "BAR",
+        "node": "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "online": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "open_files": {
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system": 1,
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system": 1,
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system": 1
+        },
+        "operator_policy": "replicate-root-vhost",
+        "policy": "BAR",
+        "reductions": 187585,
+        "reductions_details": {
+            "rate": 62.2
+        },
+        "single_active_consumer_tag": null,
+        "state": "running",
+        "type": "quorum",
+        "vhost": "/"
+    },
+    {
+        "arguments": {
+            "x-queue-type": "quorum"
+        },
+        "auto_delete": false,
+        "consumer_capacity": 0,
+        "consumer_utilisation": 0,
+        "consumers": 0,
+        "durable": true,
+        "effective_policy_definition": {
+            "max-length": 12,
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "garbage_collection": {
+            "fullsweep_after": 65535,
+            "max_heap_size": 0,
+            "min_bin_vheap_size": 46422,
+            "min_heap_size": 233,
+            "minor_gcs": 53
+        },
+        "leader": "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "members": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "memory": 176716,
+        "message_bytes": 98,
+        "message_bytes_dlx": 0,
+        "message_bytes_persistent": 98,
+        "message_bytes_ram": 0,
+        "message_bytes_ready": 98,
+        "message_bytes_unacknowledged": 0,
+        "messages": 1,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_dlx": 0,
+        "messages_persistent": 1,
+        "messages_ram": 0,
+        "messages_ready": 1,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "name": "FOO",
+        "node": "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "online": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "open_files": {
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system": 1,
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system": 1,
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system": 1
+        },
+        "operator_policy": "replicate-root-vhost",
+        "policy": "FOO",
+        "reductions": 190410,
+        "reductions_details": {
+            "rate": 62.2
+        },
+        "single_active_consumer_tag": null,
+        "state": "running",
+        "type": "quorum",
+        "vhost": "/"
+    },
+    {
+        "arguments": {},
+        "auto_delete": false,
+        "consumer_capacity": 0,
+        "consumer_utilisation": 0,
+        "consumers": 0,
+        "durable": true,
+        "effective_policy_definition": {
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "exclusive_consumer_tag": null,
+        "garbage_collection": {
+            "fullsweep_after": 65535,
+            "max_heap_size": 0,
+            "min_bin_vheap_size": 46422,
+            "min_heap_size": 233,
+            "minor_gcs": 106
+        },
+        "head_message_timestamp": null,
+        "idle_since": "2024-08-21T03:43:12.390+00:00",
+        "memory": 11848,
+        "message_bytes": 0,
+        "message_bytes_paged_out": 0,
+        "message_bytes_persistent": 0,
+        "message_bytes_ram": 0,
+        "message_bytes_ready": 0,
+        "message_bytes_unacknowledged": 0,
+        "messages": 0,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_paged_out": 0,
+        "messages_persistent": 0,
+        "messages_ram": 0,
+        "messages_ready": 0,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_ready_ram": 0,
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged_ram": 0,
+        "name": "NEW_QUEUE",
+        "node": "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "operator_policy": "replicate-root-vhost",
+        "policy": null,
+        "recoverable_slaves": null,
+        "reductions": 79255,
+        "reductions_details": {
+            "rate": 0.0
+        },
+        "single_active_consumer_tag": null,
+        "state": "running",
+        "storage_version": 1,
+        "type": "classic",
+        "vhost": "/"
+    },
+    {
+        "arguments": {
+            "x-queue-type": "quorum"
+        },
+        "auto_delete": false,
+        "consumer_capacity": 0,
+        "consumer_utilisation": 0,
+        "consumers": 0,
+        "durable": true,
+        "effective_policy_definition": {
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "garbage_collection": {
+            "fullsweep_after": 65535,
+            "max_heap_size": 0,
+            "min_bin_vheap_size": 46422,
+            "min_heap_size": 233,
+            "minor_gcs": 34
+        },
+        "leader": "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "members": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "memory": 428084,
+        "message_bytes": 9216,
+        "message_bytes_dlx": 0,
+        "message_bytes_persistent": 9216,
+        "message_bytes_ram": 0,
+        "message_bytes_ready": 9216,
+        "message_bytes_unacknowledged": 0,
+        "messages": 9,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_dlx": 0,
+        "messages_persistent": 9,
+        "messages_ram": 0,
+        "messages_ready": 9,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "name": "dmitry",
+        "node": "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "online": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "open_files": {
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system": 1,
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system": 1,
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system": 1
+        },
+        "operator_policy": "replicate-root-vhost",
+        "policy": null,
+        "reductions": 792056,
+        "reductions_details": {
+            "rate": 60.0
+        },
+        "single_active_consumer_tag": null,
+        "state": "running",
+        "type": "quorum",
+        "vhost": "/"
+    },
+    {
+        "arguments": {},
+        "auto_delete": false,
+        "consumer_capacity": 0,
+        "consumer_utilisation": 0,
+        "consumers": 0,
+        "durable": true,
+        "effective_policy_definition": {
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "exclusive_consumer_tag": null,
+        "garbage_collection": {
+            "fullsweep_after": 65535,
+            "max_heap_size": 0,
+            "min_bin_vheap_size": 46422,
+            "min_heap_size": 233,
+            "minor_gcs": 108
+        },
+        "head_message_timestamp": null,
+        "idle_since": "2024-08-21T03:43:11.105+00:00",
+        "memory": 11856,
+        "message_bytes": 0,
+        "message_bytes_paged_out": 0,
+        "message_bytes_persistent": 0,
+        "message_bytes_ram": 0,
+        "message_bytes_ready": 0,
+        "message_bytes_unacknowledged": 0,
+        "messages": 0,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_paged_out": 0,
+        "messages_persistent": 0,
+        "messages_ram": 0,
+        "messages_ready": 0,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_ready_ram": 0,
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged_ram": 0,
+        "name": "moo",
+        "node": "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "operator_policy": "replicate-root-vhost",
+        "policy": null,
+        "recoverable_slaves": null,
+        "reductions": 80568,
+        "reductions_details": {
+            "rate": 0.0
+        },
+        "single_active_consumer_tag": null,
+        "state": "running",
+        "storage_version": 1,
+        "type": "classic",
+        "vhost": "/"
+    },
+    {
+        "arguments": {
+            "x-queue-type": "quorum"
+        },
+        "auto_delete": false,
+        "consumer_capacity": 0,
+        "consumer_utilisation": 0,
+        "consumers": 0,
+        "durable": true,
+        "effective_policy_definition": {
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "garbage_collection": {
+            "fullsweep_after": 65535,
+            "max_heap_size": 0,
+            "min_bin_vheap_size": 46422,
+            "min_heap_size": 233,
+            "minor_gcs": 52
+        },
+        "leader": "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "members": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "memory": 164324,
+        "message_bytes": 0,
+        "message_bytes_dlx": 0,
+        "message_bytes_persistent": 0,
+        "message_bytes_ram": 0,
+        "message_bytes_ready": 0,
+        "message_bytes_unacknowledged": 0,
+        "messages": 0,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_dlx": 0,
+        "messages_persistent": 0,
+        "messages_ram": 0,
+        "messages_ready": 0,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "name": "rabbitmq-audit-logger-internal",
+        "node": "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "online": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "open_files": {
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system": 1,
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system": 1,
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system": 1
+        },
+        "operator_policy": "replicate-root-vhost",
+        "policy": null,
+        "reductions": 188457,
+        "reductions_details": {
+            "rate": 59.6
+        },
+        "single_active_consumer_tag": null,
+        "state": "running",
+        "type": "quorum",
+        "vhost": "/"
+    },
+    {
+        "arguments": {
+            "x-initial-cluster-size": 2,
+            "x-max-age": "12h",
+            "x-max-length-bytes": 5000000000,
+            "x-queue-type": "stream"
+        },
+        "auto_delete": false,
+        "consumers": 1,
+        "durable": true,
+        "effective_policy_definition": {
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "leader": "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "members": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "memory": 34816,
+        "messages": 808,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_ready": 808,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "name": "rabbitmq.internal.osr.messages",
+        "node": "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "online": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "operator_policy": "replicate-root-vhost",
+        "policy": null,
+        "readers": {
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system": 0,
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system": 2
+        },
+        "reductions": 0,
+        "reductions_details": {
+            "rate": 0.0
+        },
+        "state": "running",
+        "type": "stream",
+        "vhost": "/"
+    },
+    {
+        "arguments": {
+            "x-initial-cluster-size": 2,
+            "x-max-age": "1h",
+            "x-max-length-bytes": 500000000,
+            "x-queue-type": "stream"
+        },
+        "auto_delete": false,
+        "consumers": 1,
+        "durable": true,
+        "effective_policy_definition": {
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "leader": "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "members": [
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "memory": 22024,
+        "messages": 331,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_ready": 331,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "name": "rabbitmq.internal.osr.metrics",
+        "node": "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "online": [
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "operator_policy": "replicate-root-vhost",
+        "policy": null,
+        "readers": {
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system": 2,
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system": 0
+        },
+        "reductions": 0,
+        "reductions_details": {
+            "rate": 0.0
+        },
+        "state": "running",
+        "type": "stream",
+        "vhost": "/"
+    },
+    {
+        "arguments": {
+            "x-queue-type": "stream"
+        },
+        "auto_delete": false,
+        "consumers": 0,
+        "durable": true,
+        "effective_policy_definition": {
+            "remote-dc-replicate": true
+        },
+        "exclusive": false,
+        "leader": "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "members": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "memory": 6216,
+        "messages": 0,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_ready": 0,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "name": "stream-test",
+        "node": "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "online": [
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system",
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system"
+        ],
+        "operator_policy": "replicate-root-vhost",
+        "policy": null,
+        "readers": {
+            "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system": 0,
+            "rabbit@rabbitmq-1-upstream-server-1.rabbitmq-1-upstream-nodes.rabbitmq-system": 2,
+            "rabbit@rabbitmq-1-upstream-server-2.rabbitmq-1-upstream-nodes.rabbitmq-system": 0
+        },
+        "reductions": 0,
+        "reductions_details": {
+            "rate": 0.0
+        },
+        "state": "running",
+        "type": "stream",
+        "vhost": "/"
+    },
+    {
+        "arguments": {},
+        "auto_delete": false,
+        "consumer_capacity": 1.0,
+        "consumer_utilisation": 1.0,
+        "consumers": 3,
+        "durable": false,
+        "effective_policy_definition": {},
+        "exclusive": false,
+        "exclusive_consumer_tag": null,
+        "garbage_collection": {
+            "fullsweep_after": 65535,
+            "max_heap_size": 0,
+            "min_bin_vheap_size": 46422,
+            "min_heap_size": 233,
+            "minor_gcs": 485
+        },
+        "head_message_timestamp": null,
+        "idle_since": "2024-08-21T03:43:34.188+00:00",
+        "memory": 11288,
+        "message_bytes": 0,
+        "message_bytes_paged_out": 0,
+        "message_bytes_persistent": 0,
+        "message_bytes_ram": 0,
+        "message_bytes_ready": 0,
+        "message_bytes_unacknowledged": 0,
+        "message_stats": {
+            "ack": 279,
+            "ack_details": {
+                "rate": 0.2
+            },
+            "deliver": 279,
+            "deliver_details": {
+                "rate": 0.2
+            },
+            "deliver_get": 279,
+            "deliver_get_details": {
+                "rate": 0.2
+            },
+            "deliver_no_ack": 0,
+            "deliver_no_ack_details": {
+                "rate": 0.0
+            },
+            "get": 0,
+            "get_details": {
+                "rate": 0.0
+            },
+            "get_empty": 0,
+            "get_empty_details": {
+                "rate": 0.0
+            },
+            "get_no_ack": 0,
+            "get_no_ack_details": {
+                "rate": 0.0
+            },
+            "publish": 279,
+            "publish_details": {
+                "rate": 0.0
+            },
+            "redeliver": 0,
+            "redeliver_details": {
+                "rate": 0.0
+            }
+        },
+        "messages": 0,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_paged_out": 0,
+        "messages_persistent": 0,
+        "messages_ram": 0,
+        "messages_ready": 0,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_ready_ram": 0,
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged_ram": 0,
+        "name": "rabbitmq.internal.definition_sync.requests",
+        "node": "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "operator_policy": null,
+        "policy": null,
+        "recoverable_slaves": null,
+        "reductions": 371616,
+        "reductions_details": {
+            "rate": 0.0
+        },
+        "single_active_consumer_tag": null,
+        "state": "running",
+        "storage_version": 1,
+        "type": "classic",
+        "vhost": "rabbitmq_schema_definition_sync"
+    },
+    {
+        "arguments": {},
+        "auto_delete": false,
+        "consumer_capacity": 1.0,
+        "consumer_utilisation": 1.0,
+        "consumers": 3,
+        "durable": false,
+        "effective_policy_definition": {},
+        "exclusive": false,
+        "exclusive_consumer_tag": null,
+        "garbage_collection": {
+            "fullsweep_after": 65535,
+            "max_heap_size": 0,
+            "min_bin_vheap_size": 46422,
+            "min_heap_size": 233,
+            "minor_gcs": 499
+        },
+        "head_message_timestamp": null,
+        "idle_since": "2024-08-21T03:43:46.776+00:00",
+        "memory": 11288,
+        "message_bytes": 0,
+        "message_bytes_paged_out": 0,
+        "message_bytes_persistent": 0,
+        "message_bytes_ram": 0,
+        "message_bytes_ready": 0,
+        "message_bytes_unacknowledged": 0,
+        "message_stats": {
+            "ack": 279,
+            "ack_details": {
+                "rate": 0.0
+            },
+            "deliver": 279,
+            "deliver_details": {
+                "rate": 0.0
+            },
+            "deliver_get": 279,
+            "deliver_get_details": {
+                "rate": 0.0
+            },
+            "deliver_no_ack": 0,
+            "deliver_no_ack_details": {
+                "rate": 0.0
+            },
+            "get": 0,
+            "get_details": {
+                "rate": 0.0
+            },
+            "get_empty": 0,
+            "get_empty_details": {
+                "rate": 0.0
+            },
+            "get_no_ack": 0,
+            "get_no_ack_details": {
+                "rate": 0.0
+            },
+            "publish": 279,
+            "publish_details": {
+                "rate": 0.2
+            },
+            "redeliver": 0,
+            "redeliver_details": {
+                "rate": 0.0
+            }
+        },
+        "messages": 0,
+        "messages_details": {
+            "rate": 0.0
+        },
+        "messages_paged_out": 0,
+        "messages_persistent": 0,
+        "messages_ram": 0,
+        "messages_ready": 0,
+        "messages_ready_details": {
+            "rate": 0.0
+        },
+        "messages_ready_ram": 0,
+        "messages_unacknowledged": 0,
+        "messages_unacknowledged_details": {
+            "rate": 0.0
+        },
+        "messages_unacknowledged_ram": 0,
+        "name": "rabbitmq.internal.definition_sync.responses.rabbitmq-cluster-id-RHRUyTORXN5bPevHUc4UGQ",
+        "node": "rabbit@rabbitmq-1-upstream-server-0.rabbitmq-1-upstream-nodes.rabbitmq-system",
+        "operator_policy": null,
+        "policy": null,
+        "recoverable_slaves": null,
+        "reductions": 387821,
+        "reductions_details": {
+            "rate": 424.2
+        },
+        "single_active_consumer_tag": null,
+        "state": "running",
+        "storage_version": 1,
+        "type": "classic",
+        "vhost": "rabbitmq_schema_definition_sync"
+    }
+]
