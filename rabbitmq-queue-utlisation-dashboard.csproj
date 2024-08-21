@@ -25,4 +25,8 @@
     <PackageReference Include="Steeltoe.Management.TracingCore" Version="$(SteeltoeVersion)" />
   </ItemGroup>
 
+   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.*" />
+  </ItemGroup>
+
 </Project>
