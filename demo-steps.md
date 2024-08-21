@@ -1,5 +1,5 @@
 * Unzip steeltoe initialzr download
-* Modify kestreal port in `appsettings.json`:
+* Modify kestrel port in `appsettings.json`:
 ```
 "Kestrel": {
     "Endpoints": {
@@ -9,7 +9,7 @@
     }
   }
 ```
-* Generate JSON classes
+* Generate JSON classes using [converter](https://json2csharp.com/)
 * `using Newtonsoft.Json;`
 * add reference to Newtonsoft.Json: `dotnet add package Newtonsoft.Json -v 13.0.3`
 
