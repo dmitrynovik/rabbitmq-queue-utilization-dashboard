@@ -17,6 +17,9 @@ builder.Services.AddDistributedTracingAspNetCore();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSingleton<RabbitMQConfig>();
+builder.Services.AddSingleton<RabbitMQService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
