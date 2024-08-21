@@ -17,8 +17,12 @@ builder.Services.AddDistributedTracingAspNetCore();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddHttpClient();
+builder.Services.AddSingleton<LoggerFactory>();
+
 builder.Services.AddSingleton<RabbitMQConfig>();
 builder.Services.AddSingleton<RabbitMQService>();
+builder.Services.AddSingleton<MetricsService>();
 
 var app = builder.Build();
 
@@ -49,6 +53,9 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast").WithOpenApi();
+
+var metricsService = app.Services.GetService<MetricsService>();
+await metricsService.StartAsync(CancellationToken.None);
 
 app.Run();
 

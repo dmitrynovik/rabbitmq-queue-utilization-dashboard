@@ -148,7 +148,7 @@ public class AckDetails
         public double rate { get; set; }
     }
 
-    public class Root
+    public class QueueResponse
     {
         public Arguments arguments { get; set; }
         public bool auto_delete { get; set; }
