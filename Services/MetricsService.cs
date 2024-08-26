@@ -4,13 +4,18 @@ public class MetricsService : IHostedService
 {
     private readonly MetricsConfig metricsConfig;
     private readonly RabbitMQService rabbitMQService;
+    private readonly LokiService lokiService;
     private readonly ILogger<MetricsService> log;
     private bool started;
 
-    public MetricsService(MetricsConfig metricsConfig, RabbitMQService rabbitMQService, LoggerFactory loggerFactory)
+    public MetricsService(MetricsConfig metricsConfig, 
+        RabbitMQService rabbitMQService,
+        LokiService lokiService,
+        LoggerFactory loggerFactory)
     {
         this.metricsConfig = metricsConfig;
         this.rabbitMQService = rabbitMQService;
+        this.lokiService = lokiService;
         log = loggerFactory.CreateLogger<MetricsService>();
     }
 
