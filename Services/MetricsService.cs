@@ -23,8 +23,14 @@ public class MetricsService : IHostedService
     {
        started = true;
        while (started) {
-           var queueResponse = await rabbitMQService.getQueues();
-           log.LogInformation("received queues: " + queueResponse.Length);
+           var queues = await rabbitMQService.getQueues();
+           log.LogInformation("received queues: " + queues.Length);
+           
+           foreach (var queue in queues) {
+              var qu = RabbitMQService.convert(queue);
+              lokiService.LogQueueResponse(qu);
+           }
+           
            Thread.Sleep(metricsConfig.PollingInterval);
        }
     }

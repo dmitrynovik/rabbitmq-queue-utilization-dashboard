@@ -25,6 +25,28 @@ public class RabbitMQService {
         return JsonConvert.DeserializeObject<QueueResponse[]>(response);    
     }
 
+    public static QueueMaxLenPolicyUtilization convert(QueueResponse queue) {
+        EffectivePolicyDefinition policy = queue.effective_policy_definition;
+        var utilization = 0.0;
+
+        if (policy != null) {
+            // check utilisation as no. of messages:
+            int? maxLength = policy.maxlength;
+            if (maxLength != null && maxLength.Value > 0) {
+                utilization = (double) queue.messages / maxLength.Value;
+            }
+            
+            // check utlisation as no. of bytes:
+            long maxLengthBytes = policy.maxlengthbytes;
+            if (maxLengthBytes > 0) {
+                var utilisationBytes = (double) queue.message_bytes / maxLengthBytes;
+                utilization = Math.Max(utilization, utilisationBytes);
+            }
+        }
+
+        return new QueueMaxLenPolicyUtilization(queue.vhost, queue.name, utilization);
+    }
+
     private string GetBasicAuthenticationHeader() {
 		string auth = rabbitMQConfig.User + ":" + rabbitMQConfig.Password;
 		return "Basic " + Convert.ToBase64String(Encoding.UTF8.GetBytes(auth));

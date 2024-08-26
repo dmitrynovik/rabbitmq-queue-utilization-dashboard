@@ -10,4 +10,7 @@ public class LokiConfig {
     public string Schema => configuration["Loki.Schema"];
     public string Host => configuration["Loki.Host"];
     public int Port => int.Parse(configuration["Loki.Port"]);
+
+    public string GetConnectionString() =>
+        $"{Schema}://{Host}:{Port}";
 }
