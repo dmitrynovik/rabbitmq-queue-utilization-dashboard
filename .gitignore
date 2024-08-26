@@ -10,3 +10,6 @@ obj/
 
 # JetBrains Rider
 /.idea/
+
+# VS lines of code counter plugin
+/.VSCodeCounter
