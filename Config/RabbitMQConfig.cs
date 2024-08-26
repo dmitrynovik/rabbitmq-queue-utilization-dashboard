@@ -1,7 +1,3 @@
-
-using System.Globalization;
-using Microsoft.Extensions.Configuration;
-
 public class RabbitMQConfig {
     private readonly IConfiguration configuration;
 

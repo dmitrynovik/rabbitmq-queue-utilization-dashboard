@@ -2,12 +2,14 @@ using System;
 
 public class MetricsService : IHostedService
 {
+    private readonly MetricsConfig metricsConfig;
     private readonly RabbitMQService rabbitMQService;
     private readonly ILogger<MetricsService> log;
     private bool started;
 
-    public MetricsService(RabbitMQService rabbitMQService, LoggerFactory loggerFactory)
+    public MetricsService(MetricsConfig metricsConfig, RabbitMQService rabbitMQService, LoggerFactory loggerFactory)
     {
+        this.metricsConfig = metricsConfig;
         this.rabbitMQService = rabbitMQService;
         log = loggerFactory.CreateLogger<MetricsService>();
     }
@@ -18,7 +20,7 @@ public class MetricsService : IHostedService
        while (started) {
            var queueResponse = await rabbitMQService.getQueues();
            log.LogInformation("received queues: " + queueResponse.Length);
-           Thread.Sleep(10000);
+           Thread.Sleep(metricsConfig.PollingInterval);
        }
     }
 

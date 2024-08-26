@@ -22,6 +22,7 @@ builder.Services.AddSingleton<LoggerFactory>();
 
 builder.Services.AddSingleton<RabbitMQConfig>();
 builder.Services.AddSingleton<RabbitMQService>();
+builder.Services.AddSingleton<MetricsConfig>();
 builder.Services.AddSingleton<MetricsService>();
 ```
 
