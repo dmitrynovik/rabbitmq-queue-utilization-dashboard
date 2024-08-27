@@ -28,6 +28,7 @@ builder.Services.AddSingleton<MetricsConfig>();
 builder.Services.AddSingleton<MetricsService>();
 ```
 
+Add before `app.Run()`
 ```
 var metricsService = app.Services.GetService<MetricsService>();
 await metricsService.StartAsync(CancellationToken.None);
